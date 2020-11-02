@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            margin: auto;
+            justify-content: center;
+align-items: center;
+height: 100vh;            
+        }
+.bear{
+    height: 400px;
+    width: 400px;
+    border-radius:50%;
+    background: black;
+    position: relative;
+}
+/* 嘴巴 */
+.bear::after{
+    content: '';
+    background: white;
+    height: 50px;
+    width:50px;
+    
+    position: absolute;
+left: 100px;
+top:250px;
+bottom: 0;
+right:23px;
+margin: auto;
+transform: skewX(-45deg);
+
+}
+/* 嘴巴的底 */
+.bear::before{
+    content: '';
+    background: white;
+    height: 50px;
+    width:50px;
+    
+    position: absolute;
+left: 0;
+top:250px;
+bottom: 0;
+right: 60px;
+margin: auto;
+transform: skewX(45deg);
+
+}
+
+
+.red{
+height: 100px;
+width: 100px;
+border-radius: 50%;
+background: red;
+position: absolute;
+top: 150px;
+right: -20px;
+}
+
+.red2{
+height: 100px;
+width: 100px;
+border-radius: 50%;
+background: red;
+position: absolute;
+top: 150px;
+left: -20px;
+}
+
+.ear{
+height: 70px;
+width: 70px;
+border-radius:50%;
+background: black;
+position: absolute;
+right: 300px;
+top:-5px
+}
+.ear::before{
+content:'';
+height:40px;
+width: 40px;
+border-radius:50%;
+background: white;
+position: absolute;
+left: 0px;
+top:0px;
+bottom: 0;
+right: 0;
+margin: auto;
+}
+
+.ear2{
+height: 70px;
+width: 70px;
+border-radius:50%;
+background: black;
+position: absolute;
+left: 300px;
+top:-5px
+}
+.ear2::before{
+content:'';
+height:40px;
+width: 40px;
+border-radius:50%;
+background: white;
+position: absolute;
+left: 0px;
+top:0px;
+bottom: 0;
+right: 0;
+margin: auto;
+}
+
+.eyes{
+    height: 80px;
+width: 80px;
+border-radius:50%;
+background: white;
+position: absolute;
+left: 80px;
+top:75px
+}
+.eyes::before{
+content:'';
+height: 50px;
+width: 50px;
+border-radius:50%;
+background: black;
+position: absolute;
+left: 0px;
+top:0px;
+bottom: 0;
+right: 0;
+margin: auto;
+}
+
+
+.eyes2{
+    height: 80px;
+width: 80px;
+border-radius:50%;
+background: white;
+position: absolute;
+right: 80px;
+top:75px
+}
+.eyes2::before{
+content:'';
+height: 50px;
+width: 50px;
+border-radius:50%;
+background: black;
+position: absolute;
+left: 0px;
+top:0px;
+bottom: 0;
+right: 0;
+margin: auto;
+}
+.nose{
+
+    left: 125px;
+    top: 150px;
+    background: white;
+    height: 110px;
+    width:150px;
+    border-radius: 50%;
+    position: absolute;
+margin: auto;
+position: absolute;
+}
+.nose::before{
+
+    content: '';
+    background:black;
+    height: 40px;
+    width:90px;
+    border-radius: 50%;
+left: 0px;
+top:30px;
+bottom: 0;
+right: 0;
+margin: auto;
+position: absolute;
+}
+.nose::after{
+
+content: '';
+background:black;
+height: 25px;
+width:40px;
+border-radius: 50%;
+left: 0px;
+top:-50px;
+bottom: 0;
+right: 0;
+margin: auto;
+position: absolute;
+}
+
+    </style>
+</head>
+<body>
+    <div class="bear">
+<div class="red"></div>
+<div class="red2"></div>
+
+<div class="ear"></div>
+<div class="ear2"></div>
+<div class="eyes"></div>
+<div class="eyes2"></div>
+<div class="nose"></div>
+    </div>
+
+
+</body>
+</html>
